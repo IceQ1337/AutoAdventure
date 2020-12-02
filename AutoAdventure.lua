@@ -78,7 +78,7 @@ function AutoAdventure:initializeMissions()
 				if missionData.followers and #missionData.followers > 0 then
 					for missionFollowerIndex, missionFollowerData in ipairs(missionData.followers) do
 						for followerIndex, followerData in ipairs(Followers) do
-							local FollowerAutoCombatStatsInfo = C_Garrison.GetFollowerAutoCombatStats(followerData.garrFollowerID)
+							local FollowerAutoCombatStatsInfo = C_Garrison.GetFollowerAutoCombatStats(followerData.followerID)
 
 							-- Followers on active missions or with low health are considered "not available"
 							if followerData.followerID == missionFollowerData or FollowerAutoCombatStatsInfo.currentHealth < 100 then
@@ -143,7 +143,7 @@ function AutoAdventure:calculateMissions(AvailableFollowers, AvailableMissions, 
 				-- Evaluate followers first, because we could have an option to always use only one follower or force a win with all we got
 				-- If we evaluate raw values, just get the followers ( 1 or all ) in there
 				for followerIndex, followerData in ipairs(AvailableFollowers) do
-					local FollowerAutoCombatStatsInfo = C_Garrison.GetFollowerAutoCombatStats(followerData.garrFollowerID)
+					local FollowerAutoCombatStatsInfo = C_Garrison.GetFollowerAutoCombatStats(followerData.followerID)
 					
 				end
 
