@@ -1,0 +1,7 @@
+## Interface: 90002
+## Title: AutoAdventure
+## Notes: Automatically select the best team for the shadowlands command table adventures
+## Author: IceQ1337 / Shuuichi-Frostwolf (EU)
+## Version: 1.0.0
+
+AutoAdventure.lua
