@@ -11,7 +11,7 @@ I currently don't have enough time to look into a suitable algorithm to calculat
 
 The AddOn structure is fairly well-documented and does the following:
 
-Every time the player opens the mission frame (only shadowlands adventure table) or starts a mission, the AddOn gets all available missions and followers based on their status or current health points. It then starts to "calculate" each mission if followers are available by getting a simple board overview and saving every enemy in a seperate table to make it accessible in a future analysing function. After that, it loops through our available board spots (1-5) and through our followers and available troops (those you can use an unlimited amount of time) to get their 'FollowerAutoCombatStatsInfo'.
+Every time the player opens the mission frame (only shadowlands adventure table) or starts a mission, the AddOn gets all available missions and followers based on their status or current health points. It then starts to "calculate" each mission if followers are available by getting a simple board overview and saving every enemy in a seperate table to make it accessible in a future analyzing function. After that, it loops through our available board spots (1-5) and through our followers and available troops (those you can use an unlimited amount of time) to get their 'FollowerAutoCombatStatsInfo'.
 
 **This AddOn does not yet contain any logic to simulate mission outcomes.**
 
