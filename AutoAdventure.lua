@@ -105,7 +105,7 @@ function AutoAdventure:calculateMissions(AvailableFollowers, AvailableMissions, 
 		local CalculatedMissions = {}
 		
 		for missionIndex, missionData in ipairs(AvailableMissions) do			
-			print(string.format("Calculating Mission: %s", tostring(missionData.missionID)))
+			--print(string.format("Calculating Mission: %s", tostring(missionData.missionID)))
 
 			local missionDeploymentInfo = C_Garrison.GetMissionDeploymentInfo(missionData.missionID)
 			local enemyEncounterInfo = missionDeploymentInfo.enemies -- https://wow.gamepedia.com/Struct_GarrisonEnemyEncounterInfo
